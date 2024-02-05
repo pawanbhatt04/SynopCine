@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<title>SynopCine</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="/styles/index.css">
+	</head>
+
+	<body>
+		<header>
+			<img src="/images/logo-movie.png" alt="MoviePitch">
+			<a href="/"><span>Synop</span>Cine</a>
+		</header>
+		<main>
+        <!-- The Output -->	
+        <% if(locals.title){ %>
+         
+        <section class="output-container" id="output-container">
+            <div id="output-img-container" class="output-img-container"><img src="<%=poster%>" alt=""></div>
+            <h1 id="output-title"><%=title%></h1>
+            <h2 id="output-stars"><%=starcast%></h2>
+            <p id="output-text"><%=synopsis%></p>
+			<a href="/history" id="history-btn" class="view-pitch-btn">Back</a>
+        </section>
+        <% } %>
+    </main>	
+    <footer>
+        &copy; 2024 SynopCine All rights reserved
+    </footer>
+    <script type="module" src="/scripts/script.js"></script>
+</body>
+
+</html>

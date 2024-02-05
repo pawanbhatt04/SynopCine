@@ -1,0 +1,72 @@
+section{
+    padding: 0;
+    overflow: hidden;
+}
+
+div#movie-container{
+    padding: 16px 0;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+    max-height: 60vh;
+    margin-top: 15px;
+}
+
+.movie {
+    padding: 11px 11px 11px 11px;
+    border-radius: 15px;
+}
+
+.movie a{
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie:hover{
+    background-color: grey;
+}
+
+#setup-container{
+    padding: 20px;
+    overflow: hidden;
+    background-color: black;
+}
+
+#setup-container>a{
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0px 140px
+}
+
+#setup-container span {
+    font-weight: 400;
+}
+
+div#movie-container::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+
+  div#movie-container::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177);
+    border-radius: 10px;
+}
+
+div#movie-container::-webkit-scrollbar-thumb {
+    background: rgb(75, 74, 74);
+    border-radius: 10px;
+  }
+
+div#movie-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100);
+    border-radius: 10px;
+  }
+
+  div#movie-container::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+  }
