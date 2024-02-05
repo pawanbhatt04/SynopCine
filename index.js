@@ -9,7 +9,7 @@ import path from 'path';
 import dotenv from 'dotenv';
 import { createSynops, getSynopsisByTitle, getAllTitles } from './controllers/synopController.js';
 
-mongoose.connect("mongodb://127.0.0.1:27017/synopsis");
+mongoose.connect("mongodb://127.0.0.1:27017/youdatabase");
 dotenv.config();
 const port = 3000;
 const app = express();
